@@ -11,7 +11,9 @@ public class MainPage {
     private final SelenideElement CHOOSE_CITY_MENU = $(".HeaderTopBlock_current-city-name__MPH2d");
     private final SelenideElement CITY_SELECT = $$(".City_city-title__F8zgx").get(12);
     private final SelenideElement ACTUAL_CITY = $(".HeaderTopBlock_current-city__p90cG");
-
+    static final SelenideElement LOGO = $x("//div[@class=\"open-ui-title-wrapper\"]");
+    static final String MAIN_URL ="https://www.open.ru/";
+    static final String CORRECT_CITY = "Санкт-Петербург";
 
     public void clickOnHomeButton() {
         HOME_BUTTON.click();
